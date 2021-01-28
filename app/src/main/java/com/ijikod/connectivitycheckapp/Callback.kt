@@ -5,7 +5,7 @@ import android.net.Network
 import android.nfc.Tag
 import android.util.Log
 
-class ConnectivityManager : ConnectivityManager.NetworkCallback() {
+class Callback : ConnectivityManager.NetworkCallback() {
 
 
     override fun onAvailable(network: Network) {
