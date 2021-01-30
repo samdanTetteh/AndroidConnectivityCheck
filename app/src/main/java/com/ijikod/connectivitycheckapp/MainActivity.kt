@@ -16,10 +16,10 @@ class MainActivity : AppCompatActivity() {
         val connectionTxt = findViewById<TextView>(R.id.connectivity_status_txt)
 
         networkManager.result.observe(this, Observer<NetworkResult> { result ->
-                with (result) {
-                    connectionTxt.setText(messageResId)
-                    connectionTxt.setTextColor(colorResId)
-                }
+            with(connectionTxt) {
+                setText(result.messageResId)
+                setTextColor(result.colorResId)
+            }
         })
     }
 
