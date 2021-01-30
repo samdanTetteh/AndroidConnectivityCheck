@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ConnectivityCheckApp</string>
+    <string name="connected_msg_txt">Connected</string>
+    <string name="disconnected_msg_txt">Disconnected</string>
+    <string name="connecting_msg_txt">connecting...</string>
 </resources>
